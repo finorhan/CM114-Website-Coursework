@@ -40,3 +40,17 @@ footer{
     border-radius: 10px
     
 }
+
+nav li{
+    border: 2px, solid, moccasin;
+    background-color: lavender;
+    list-style-type: none;
+}
+
+nav li:hover{
+    background-color: lavender;
+}
+
+.active{
+    background-color: seagreen;
+}
