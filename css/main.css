@@ -43,15 +43,16 @@ footer{
 }
 
 nav ul{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     overflow: hidden
 }
 
 
 nav li{
-    border: 2px, solid, moccasin;
-    background-color: lavender;
+    border-width: 2px;
+    border-color: lavender;
+    border-style:solid;
     list-style-type: none;
     float: left;
     width: 15%;
@@ -60,6 +61,7 @@ nav li{
 
 nav li a{
     color: white;
+    text-align: center;
     text-decoration: none
 }
 
