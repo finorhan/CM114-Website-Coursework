@@ -1,11 +1,42 @@
+body{
+    background-color:cornflowerblue
+}
+
+header{
+    background-color: azure;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+H1,H2,H3,H4,H5,H6,p{
+    font-family: garamond, serif;
+    color:chocolate
+}
+
 H1{
-    color:bisque
+    font-size: 32pt
 }
 
-H3,p{
-    color:black
+H3{
+    font-size: 24pt
 }
 
-*{
-    background-color:azure
+p{
+    font-size: 12pt
+}
+
+main{ 
+    background-color: azure;
+    border-radius: 10px
+}
+
+aside{
+    background-color: azure;
+    border-radius: 10px
+}
+
+footer{
+    background-color: lavender;
+    border-radius: 10px
+    
 }
