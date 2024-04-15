@@ -105,3 +105,9 @@ table th{
 .title{
     display: inline
 }
+
+.carousel-item-active{
+    object-fit: cover;
+    height: auto;
+    width: auto;
+}
