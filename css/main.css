@@ -111,3 +111,15 @@ table th{
     height: auto;
     width: auto;
 }
+
+.gallery-img{
+    width: 100%;
+}
+
+#img-gallery{
+    padding-top: 10px;
+}
+
+#img-gallery .row{
+    margin-bottom: 10px;
+}
