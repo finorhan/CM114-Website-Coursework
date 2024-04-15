@@ -21,35 +21,16 @@
 
     <body>
         <!--Title and Logo-->
-        <header> 
-            <div id="title"> <h1> Indie Music Society </h1> </div>
-            <div id="logo"> <img src="images/Logo.jpg">  </div>  
-                <form>
-                    <!--Login Form-->
+        <header>
+            <img src="images/Logo.jpg" id="logo">
+            <h1 id="title"> Indie Music Society</h1>  
+                <form class="formheader" name = "loginForm">
                     <fieldset>
-                        <legend> Login </legend>
-    
-                        <label for="email">Email Address:</label>
-                        <input type="text" name="email" value=""/> <br/> 
-                        
-                        <label for="password">Password:</label>
-                        <input type="text" name="password" value=""/> <br/>
-
-                        <button type="button" onclick="alert('You have been logged in!')">  
-                            
-                        <script>
-                            var counter = 2;
-
-                            function login(){
-                                if(counter % 2 == 0){
-                                alert('You have been logged in!');
-                            }
-                            else {
-                                alert('You have been logged out!');
-                            }
-                            counter += 1;
-                         }
-                        </script> Login </button>
+                    <input type = "text" name = "Email" placeholder="Email">
+                    <input type = "text" name = "Password" placeholder="Password">
+                    <button type="button" value = "Login" onclick="loginClick()">Log in</button>
+                    </fieldset>
+                </form>
 
                        
         </header>
@@ -115,6 +96,35 @@
 
 
     <footer> <p> Copyright Fin Girvan 2024</p> </footer>
+
+    <script>
+        var loggedIn = new Boolean(false)
+
+        function loginClick(){
+        var email = document.forms["loginForm"]["Email"].value;
+        var password = document.forms["loginForm"]["Password"].value;
+        var valid = new Boolean(true)
+
+        if (email == "" && loggedIn == false){
+          alert("You must input an email!")
+          valid = false
+        }else{
+            if (password == "" && loggedIn == false){
+                alert("You must input a password!")
+                valid = false
+          }
+      }
+
+        if(loggedIn == false && valid == true){
+            alert('You have been logged in');
+            loggedIn = true;
+        }
+        else if(loggedIn == true){
+            alert('You have been logged out');
+            loggedIn = false
+        }
+    };
+        </script>
 
     </body>
 </html>
