@@ -5,9 +5,13 @@
     </head>
 
     <body>
-        <header> <div id="title"> <h1> Indie Music Society</h1> </div>
-            <div id="logo"> <img src="Logo.jpg">  </div>  </header>
+        <header> 
+            <!--Title and Logo-->
+            <div id="title"> <h1> Indie Music Society</h1> </div>
+            <div id="logo"> <img src="Logo.jpg">  </div>  
+            </header>
 
+            <!--Navigation Bar-->
         <nav>
             <ul>
                  <a href="index.html"> <li> Home </li> </a>
@@ -18,8 +22,10 @@
            </ul> 
        </nav>
 
-        <main> <div> 
+        <main> 
+            <div> 
             <form>
+                <!--Contact Us Form-->
                 <fieldset>
                     <legend> Contact us using the form below.</legend>
 
@@ -31,7 +37,9 @@
 
                     <label for="membership">Are you a member?</label>
                     <input type="checkbox" name="y member" value="Yes"/>
-                    <input type="checkbox" name="n member" value="No"/> <br/>
+                    <label for="y member"> Yes</label>
+                    <input type="checkbox" name="n member" value="No"/>
+                    <label for="n member"> No</label> <br/>
 
                     <label for="details"> Why are you contacting us?</label>
                     <textarea name="details" cols="40" rows="4" ></textarea> <br/>
@@ -39,14 +47,15 @@
                     <label for="files"> Please attach any relevant files</label>
                     <input type="file"> <br/>
 
-                    <input type="submit" value="Submit" />
+                    <button type="button"
+                    onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'> Submit</button>
 
                 </fieldset>
             </form>
-        </div></main>
+            <div> <p id="form_outcome"> </p></div>
+        </div>
+    </main>
 
-        <aside> </aside>
-
-        <footer> <p> Copyright Fin Girvan</p> </footer>
+        <footer> <p> Copyright Fin Girvan 2024 </p> </footer>
     </body>
 </html>

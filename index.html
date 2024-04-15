@@ -7,10 +7,40 @@
     </head>
 
     <body>
-        <header> <div id="title"> <h1> Indie Music Society</h1> </div>
-                <div id="logo"> <img src="Logo.jpg">  </div>        
-        </header>
+        <!--Title and Logo-->
+        <header> 
+            <div id="title"> <h1> Indie Music Society </h1> </div>
+            <div id="logo"> <img src="Logo.jpg">  </div>  
+                <form>
+                    <!--Login Form-->
+                    <fieldset>
+                        <legend> Login </legend>
+    
+                        <label for="email">Email Address:</label>
+                        <input type="text" name="email" value=""/> <br/> 
+                        
+                        <label for="password">Password:</label>
+                        <input type="text" name="password" value=""/> <br/>
 
+                        <button type="button" onclick="alert('You have been logged in!')">  
+                            
+                        <script>
+                            var counter = 2;
+
+                            function login(){
+                                if(counter % 2 == 0){
+                                alert('You have been logged in!');
+                            }
+                            else {
+                                alert('You have been logged out!');
+                            }
+                            counter += 1;
+                         }
+                        </script> Login </button>
+
+                       
+        </header>
+    <!--Navigation Bar-->
      <nav> 
         <ul>
              <li class="active"><a href="index.html"> Home </a> </li>
@@ -22,9 +52,11 @@
      </nav>
 
         <main> 
-            
+                        <!--Welcome Message-->
             <div> <h3> Welcome to the RGU Indie Music Society!</h3>
                      <p> This society is for new and old listeners of indie music</p></div>
+
+                     <!--Image Carousel-->
                 <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
                     <!--Wrapper-->
                     <div class="carousel-inner">
@@ -58,15 +90,15 @@
 
 
             </div>
-                    </main>
 
-        <aside> </aside>
+        </main>
 
-        <footer> 
 
-        <aside> <h3> Latest Tweets </h3> </aside>
+        <footer> <p> Copyright Fin Girvan 2024</p> </footer>
 
-        <p> Copyright Fin Girvan </p>
-                                                                             </footer>
+        <aside> <h3> Latest News </h3>
+            <img src="images/Drinks.jpg" alt="Drinks">
+            <p> We look forward to seeing old faces and welcoming new ones at our Meet & Greet next Wednesday! <br/>
+            Please feel free to talk to any of our members if you have any questions. </p> </aside>
     </body>
 </html>

@@ -5,10 +5,11 @@
     </head>
 
     <body>
+        <!--Title and Logo-->
         <header> <div id="title"> <h1> Indie Music Society</h1> </div>
             <div id="logo"> <img src="Logo.jpg">  </div>   
         </header>
-
+        <!--Navigation Bar-->
         <nav> 
             <ul> 
                 <a href="index.html"> <li> Home </li> </a>
@@ -20,14 +21,19 @@
        </nav>
 
         <main>
+            <!--Image Rows-->
              <div id="img-gallery" class="container">
+
                 <div class="row"> 
+
                     <div class="col-sm">
-                        <img src="images/Emmy.jpg" alt="'First Love' by Emmy the Great (2009)" class="gallery-img"/>
+                        <img id="Emmy-Event" src="images/Emmy.jpg" alt="'First Love' by Emmy the Great (2009)" class="gallery-img"/>
                     </div>
+
                     <div class="col-sm">
                         <img src="images/Fever.jpg" alt="'Fever To Tell' by Yeah Yeah Yeahs (2003) " class="gallery-img"/>
                     </div>
+
                     <div class="col-sm">
                         <img src="images/Frankenstein.jpg" alt="'First Two Pages of Frankenstein' by The National (2023)" class="gallery-img"/>
                     </div>
@@ -38,9 +44,11 @@
                     <div class="col-sm">
                         <img src="images/Hazel.jpg" alt="'Just Give In/Never Going Home' by Hazel English (2017)" class="gallery-img"/>
                     </div>
+
                     <div class="col-sm">
                         <img src="images/Inning.jpg" alt="'D.C. Party Machine' by Inning (2018)" class="gallery-img"/>
                     </div>
+
                     <div class="col-sm">
                         <img src="images/Launder.jpg" alt="'Happening' by Launder(2022)" class="gallery-img"/>
                     </div>
@@ -51,9 +59,11 @@
                     <div class="col-sm">
                         <img src="images/Pastlife.jpg" alt="'Pastlife' by Day Wave (2022)" class="gallery-img"/>
                     </div>
+
                     <div class="col-sm">
                         <img src="images/Portamento.jpg" alt="'Portamento' by The Drums (2011)" class="gallery-img"/>
                     </div>
+
                     <div class="col-sm">
                         <img src="images/Rotten.jpg" alt="'Rotten Bun For An Eggless Century by mui zyu (2023)" class="gallery-img"/>
                     </div>
@@ -61,12 +71,24 @@
                 </div>
 
             </div>
+            <!--JavaScript for Image Interaction-->
+            <script>
+                document.getElementById("Emmy-Event").addEventListener("mouseover", highlight);
+                document.getElementById("Emmy-Event").addEventListener("mouseout", delight);
+
+                function highlight() {
+                    document.getElementById("Emmy-Event").style="border: solid blue 2px;"
+                }
+
+                function delight() {
+                    document.getElementById("Emmy-Event").style="border: none;"
+                }
+
+            </script>
             
         </main>
-
-        <aside> </aside>
-
-        <footer> <p> Copyright Fin Girvan</p> </footer>
+        
+        <footer> <p> Copyright Fin Girvan 2024 </p> </footer>
  </body>
 
 </html>
