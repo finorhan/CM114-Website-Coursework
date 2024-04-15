@@ -1,0 +1,113 @@
+body{
+    background-color:cornflowerblue
+}
+
+header{
+    background-color: azure;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px
+}
+
+H1,H2,H3,H4,H5,H6,p{
+    font-family: garamond, serif;
+    color:chocolate
+}
+
+H1{
+    font-size: 32pt
+}
+
+H3{
+    font-size: 24pt
+}
+
+p{
+    font-size: 12pt
+}
+
+main{ 
+    background-color: azure;
+    border-radius: 10px
+}
+
+aside{
+    background-color: azure;
+    border-radius: 10px
+}
+
+footer{
+    background-color: lavender;
+    border-radius: 10px
+    
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden
+}
+
+
+nav li{
+    border-width: 2px;
+    border-color: lavender;
+    border-style:solid;
+    list-style-type: none;
+    float: left;
+    width: 15%;
+    padding: 16px;
+}
+
+nav li a{
+    color: white;
+    text-align: center;
+    text-decoration: none
+}
+
+nav li:hover{
+    background-color: black;
+}
+
+.active{
+    background-color: seagreen;
+}
+
+table{
+    font-family: garamond, serif;
+    border-collapse: collapse
+}
+
+table td, table th{
+    border: 2px, solid, #f0f0f0
+}
+
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+table tr:hover{
+    background-color: cornflowerblue;
+}
+
+table th{
+    background-color: azure;
+    color: white
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 10px
+}
+
+.title{
+    display: inline
+}
+
+.carousel-item-active{
+    object-fit: cover;
+    height: fit-content;
+    width: auto;
+}
