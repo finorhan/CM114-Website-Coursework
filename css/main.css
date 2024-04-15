@@ -107,7 +107,7 @@ table th{
 }
 
 .carousel-item-active{
-    object-fit: cover;
+    object-fit: contain;
     height: auto;
     width: auto;
 }
