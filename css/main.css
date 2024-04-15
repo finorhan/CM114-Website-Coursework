@@ -116,11 +116,12 @@ table th{
     margin-top: 20px;
     height: auto;
     margin-right: 20px;
-    width: 50%;
+    width: 20%;
 }
 
 #img-gallery{
-    padding-top: 10px;
+    padding: 10px;
+    
 }
 
 #img-gallery .row{
