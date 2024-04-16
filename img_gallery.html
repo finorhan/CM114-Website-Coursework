@@ -1,6 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Indie Music Society</title>
+        <title> Underground Sounds </title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel='stylesheet' href='css/main.css'>
@@ -21,8 +22,8 @@
     <body>
         <!--Title and Logo-->
         <header>
-            <div><img src="images/Logo.jpg" id="logo"></div>
-            <h1 id="title"> Indie Music Society</h1>   
+            <div><img src="images/Logo.jpg" id="logo" alt="Society Logo"></div>
+            <h1 id="title"> Underground Sounds </h1>   
         </header>
         <!--Navigation Bar-->
         <nav> 
@@ -32,7 +33,7 @@
                 <a href="current_members.html"> <li> Current Members </li> </a> 
                 <a href="event_calendar.html"> <li> Events </li> </a> 
                 <a href="contact_us.html"> <li> Contact Us </li> </a>
-                <a href="social_media.html"> <li> Social Media </li> </a>
+                <a href="member_reg.html"> <li> Join Us </li> </a>
                 <a href="fave_artists.html"> <li> Our Favourites </li> </a>
            </ul> 
        </nav>
@@ -43,58 +44,70 @@
                 <div class="container">
                     <div class="row"> 
                         <div class="col-sm-4">
-                            <img id="Emmy-Event" src="images/Emmy.jpg" alt="'First Love' by Emmy the Great (2009)" class="gallery-img"/>
+                            <img src="images/Emmy.jpg" alt="'First Love' by Emmy the Great (2009)" class="gallery-img"/>
                         </div>
                         <div class="col-sm-4">
-                            <img id="Fever-Event" src="images/Fever.jpg" alt="'Fever To Tell' by Yeah Yeah Yeahs (2003) " class="gallery-img"/>
+                            <img src="images/Fever.jpg" alt="'Fever To Tell' by Yeah Yeah Yeahs (2003) " class="gallery-img"/>
                         </div>
                         <div class="col-sm-4">
-                            <img id="Frankenstein-Event" src="images/Frankenstein.jpg" alt="'First Two Pages of Frankenstein' by The National (2023)" class="gallery-img"/>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img id="Hazel-Event" src="images/Hazel.jpg" alt="'Just Give In/Never Going Home' by Hazel English (2017)" class="gallery-img"/>
-                        </div>
-                        <div class="col-sm-4">
-                            <img id="Inning-Event" src="images/Inning.jpg" alt="'D.C. Party Machine' by Inning (2018)" class="gallery-img"/>
-                        </div>
-                        <div class="col-sm-4">
-                            <img id="Launder-Event" src="images/Launder.jpg" alt="'Happening' by Launder(2022)" class="gallery-img"/>
+                            <img src="images/Frankenstein.jpg" alt="'First Two Pages of Frankenstein' by The National (2023)" class="gallery-img"/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-4">
-                            <img id="Pastlife-Event" src="images/Pastlife.jpg" alt="'Pastlife' by Day Wave (2022)" class="gallery-img"/>
+                            <img src="images/Hazel.jpg" alt="'Just Give In/Never Going Home' by Hazel English (2017)" class="gallery-img"/>
                         </div>
                         <div class="col-sm-4">
-                            <img id="Portamento-Event" src="images/Portamento.jpg" alt="'Portamento' by The Drums (2011)" class="gallery-img"/>
+                            <img src="images/Inning.jpg" alt="'D.C. Party Machine' by Inning (2018)" class="gallery-img"/>
                         </div>
                         <div class="col-sm-4">
-                            <img id="Rotten-Event" src="images/Rotten.jpg" alt="'Rotten Bun For An Eggless Century by mui zyu (2023)" class="gallery-img"/>
+                            <img src="images/Launder.jpg" alt="'Happening' by Launder(2022)" class="gallery-img"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="images/Pastlife.jpg" alt="'Pastlife' by Day Wave (2022)" class="gallery-img"/>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/Portamento.jpg" alt="'Portamento' by The Drums (2011)" class="gallery-img"/>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/Rotten.jpg" alt="'Rotten Bun For An Eggless Century by mui zyu (2023)" class="gallery-img"/>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-            <!--JavaScript for Image Interaction-->
-            <script>
-                document.getElementById("Emmy-Event").addEventListener("mouseover", highlight);
-                document.getElementById("Emmy-Event").addEventListener("mouseout", delight);
-
-                function highlight() {
-                    document.getElementById("Emmy-Event").style="border: solid blue 2px;"
-                }
-
-                function delight() {
-                    document.getElementById("Emmy-Event").style="border: none;"
-                } 
-
-            </script>
             
         </main>
 
         <footer> <p> Copyright Fin Girvan 2024 </p> </footer>
+        
+        <!--JavaScript for Image Interaction-->
+        <script>
+            const albumGallery = document.getElementById("img-gallery");
+    
+            albumGallery.addEventListener("mouseover", function(event) {
+                if (event.target.classList.contains("gallery-img")) {
+                    highlight(event.target);
+                }
+            });
+    
+            function highlight(image) {
+                image.style.border = "solid green 5px";
+            }
+    
+            albumGallery.addEventListener("mouseout", function(event) {
+                if (event.target.classList.contains("gallery-img")) {
+                    delight(event.target); 
+                }
+            });
+    
+            function delight(image) {
+                image.style.border = "none";
+            }
+
+        </script>
  </body>
 
 </html>

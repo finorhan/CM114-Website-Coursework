@@ -1,51 +1,63 @@
 body{
-    background-color:cornflowerblue
+    background-color:cornflowerblue   /* Body Colour Style */
 }
 
 header{
     background-color: azure;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-right-radius: 10px;      /* Header Colour and Padding Style */
     padding: 10px
 }
 
-H1,H2,H3,H4,H5,H6,p{
-    font-family: garamond, serif;
-    color:chocolate
+H1,H2,H3,H5,H6,p{
+    font-family: garamond, serif;       /* Heading and Paragraph Styles */
+    color:chocolate;
 }
 
 H1{
-    font-size: 32pt
+    font-size: 32pt;
+    text-align: center;     /* Heading 1 Size and Alignment */
 }
 
 H3{
-    font-size: 24pt
+    font-size: 24pt         /* Heading 3 Size */
 }
 
+H4{
+    font-size: 17pt;
+    font-family: verdana;
+    color: white;         /* Heading 4 Size, Font, Colour and Alignment */
+    text-align: center;
+}
+
+H5{
+    font-size: 26pt;        /* Heading 5 Size */
+    
+}
 p{
-    font-size: 12pt
+    font-size: 15pt         /* Paragraph Text Size */
 }
 
 main{ 
     background-color: azure;
-    border-radius: 10px
+    border-radius: 10px         /* Main Colour and Border Radius */
 }
 
 aside{
     background-color: azure;
-    border-radius: 10px
+    border-radius: 10px         /* Colour and Border Size of Aside */
 }
 
 footer{
     background-color: lavender;
-    border-radius: 10px
+    border-radius: 10px              /* Footer Colour and Border Radius */
     
 }
 
 nav ul{
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    overflow: hidden;       /* Navigation Styling */
     display: flex;
     flex-direction: row;
     
@@ -54,9 +66,9 @@ nav ul{
 
 nav li{
     border: 2px solid #696969;
-    background-color: #e6e6fa;
+    background-color: cornsilk;
     list-style-type: none;
-    box-sizing: border-box;
+    box-sizing: border-box;         /* Navigation Colours */
     text-align: center;
     flex: 1;
     padding: 16px;
@@ -64,25 +76,30 @@ nav li{
 
 nav li a{
     color: white;
-    text-align: center;
-    text-decoration: none
+    text-align: center;         /* Navigation Text Styles */
+    text-decoration: none;
 }
 
 nav li:hover{
-    background-color: black;
+    background-color: seagreen;     /* Hovered Nav Colour */
 }
 
 .active{
-    background-color: seagreen;
+    background-color: seagreen;     /* Active Element Colour */
 }
 
 table{
     font-family: garamond, serif;
-    border-collapse: collapse
+    border-collapse: collapse;         /* Table Font and Width */
+    width: 100%;
 }
 
 table td, table th{
-    border: 2px, solid, #f0f0f0
+    border: 2px solid, #f0f0f0;
+    padding: 8px;
+    vertical-align: middle;
+    width: 10%;
+    font-size: 10pt;
 }
 
 table tr:nth-child(even){
@@ -90,52 +107,95 @@ table tr:nth-child(even){
 }
 
 table tr:hover{
-    background-color: cornflowerblue;
+    background-color: cornflowerblue;       /* Highlights Selected Table Rows */
 }
 
 table th{
-    background-color: black;
-    color: white
+    background-color: cornflowerblue;
+    color: white;
+    padding-top: 12px;              /* Table Styles */
+    padding-bottom: 12px;
+    text-align: center;
 }
 
 #logo{
     width: 50px;
-    height: 50px;
+    height: 50px;       /* Logo Styles */
     float: left;
     margin-right: 10px
 }
 
+
 #title{
-    display: inline
+    display: inline     /* Title Alignment */
 }
 
-.carousel-item-active{
-    object-fit: contain;
-    height: auto;
-    width: auto;
-}
 
 .gallery-img{
     margin-top: 20px;
     height: auto;
-    margin-right: 20px;
+    margin-right: 20px;        /* Gallery Images Styles */
     width: 100%;
 }
 
+.gallery-img:not(:hover) {
+    filter: sepia(35%) blur(2px)   /* Blurs and applies Sepia to non selected Gallery Images */
+}
+
 #img-gallery{
-    padding: 10px;
+    padding: 10px;      /* Gallery Padding */
     
 }
 
 #img-gallery .row{
-    margin-bottom: 10px;
+    margin-bottom: 10px;    /* Applies Bottom Margin to Image Gallery Rows */
 }
 
 .formheader{
-    float: right;
+    float: right;   /* Form in Header appears on the Right */
 }
 
 fieldset{
     margin: auto;
     padding: 10px;
+}
+
+#home-carousel .carousel-item img{
+    width: auto;
+    height: auto;               
+    max-width: 400px;           /* Keep Carousel Consistent */
+    max-height: 400px;
+}
+
+.news{
+    align-items: center;
+    display: flex;
+}
+
+#drinks{
+    margin-right: 15px;
+    width: 110px;
+    height: 150px;      /* Newsfeed Image Styles */
+    float: left;
+}
+
+
+legend{
+    color: chocolate;
+    font-size: 26pt;
+    font-family: garamond, serif;       /* Legend Stylying */
+}
+
+article{
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.artist-pic{
+    max-width: 250px;       /* Keeps Artist Pics consistent sizes */
+    max-height: 250px;
+}
+
+.artist-pic:hover {
+    filter: contrast(120%);     /* Applies mild Contrast Filter to selected Images */
 }
